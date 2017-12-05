@@ -40,27 +40,25 @@
                 <h3>Jobs</h3>
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-sm-6">
-                            Retrieve results from your jobs based on your email address:
+                        <div class="col-sm-4">
+                            Retrieve results for your jobs:
                             <div class="input-group .btn-group">
-                                <span class="input-group-addon" id="basic-addon3">Email: </span>
-                                <input type="email" class="form-control" onchange="alert('teste')"></input>
+                                <span class="input-group-addon">Email: </span>
+                                <input type="email" id="email" class="form-control" value="" placeholder="fred.s.kremer@gmail.com" onchange="getJobs()"></input>
                             </div>
                         </div>
-                        <div class="col-sm-6" id="job-list">
-                            Jobs identified for the email %s
+                        <div class="col-sm-8" id="job-list" style="visibility: hidden">
+                            Jobs identified for the email <span id="email-span"></span>
                             <table class="table" style="width:100%">
                                 <thead>
                                     <th>ID</th>
+                                    <th>Submission date</th>
                                     <th>Numer of TALEs</th>
                                     <th>Number of Targets</th>
                                 </thread>
-                                <tbody>
+                                <tbody id="job-list-content">
 
                                 </tbody>
-                                <tfoot>
-
-                                </tfoot>
                             </table>
                         </div>
                     </div>
