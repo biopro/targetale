@@ -13,7 +13,8 @@ CREATE TABLE projects (
     user text not null,
     submissionDate date  not null,
     status text  not null,
-    inputFile BLOB  not null,
-    promoterome text  not null
+    inputFileContent BLOB not null,
+    inputFileFormat text not null,
+    promoterome text not null
 
 );

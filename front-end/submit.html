@@ -39,14 +39,14 @@
 
                 <p>Submit a genome to be analyzed by our pipeline. It might be a unannotated record in FASTA format (.fasta) 
                    or an already annotated record in GenBank file format (.gb, .gbk). As the analysis may take some time, 
-                   you can provide an e-mail address so we may contact you at the end of the process. All results are stored 
-                   for at least 1 week in our server, so we recommend to download all finished jobs as soon as possible.
+                   you must provide an e-mail address so we may contact you at the end of the process. All results are stored 
+                   for at least 1 week in our server, so we recommend you to download all finished jobs as soon as possible.
                 </p>
 
                 <form action="targetale-submit.php" method="POST">
 
                     <div class="form-group row">
-                        <label for="genome-file" class="col-sm-3 col-form-label"><b>Genome file</b></label>
+                        <label for="genome-file" class="col-sm-3 col-form-label"><b>Genome file*</b></label>
                         <div class="col-sm-9">
                             <input type="file" class="form-control-file" id="genome-file" name="genome-file" required>
                         </div>
@@ -54,7 +54,7 @@
 
 
                     <div class="form-group row">
-                        <label for="file-format" class="col-sm-3 col-form-label"><b>File format</b></label>
+                        <label for="file-format" class="col-sm-3 col-form-label"><b>File format*</b></label>
                         <div class="col-sm-9">
                             <select class="form-control" id="file-format" name="file-format" required>
                                 <option value="fasta">Unannotated genome (.fasta)</option>
@@ -64,7 +64,7 @@
                     </div>
 
                     <div class="form-group row">
-                        <label for="genome-file" class="col-sm-3 col-form-label"><b>Promoterome</b></label>
+                        <label for="genome-file" class="col-sm-3 col-form-label"><b>Promoterome*</b></label>
                         <div class="col-sm-9">
                             <select class="form-control" id="promoterome" name="promoterome" required>
                                 <option value="osiris_predicted_250">Osiris: 250 bp upstream [predicted]</option>
@@ -88,11 +88,20 @@
                                 <option value="irgsp_3000">IRGSP-1.0: 3000 bp upstream</option>
                             </select>
                         </div>
-                    </div>    
+                    </div> 
+
+                    <div class="form-group row">
+                            <label for="file-format" class="col-sm-3 col-form-label"><b>Email</b></label>
+                            <div class="col-sm-9">
+                                <input type="email" class="form-control" required>                        
+                            </div>
+                        </div>
 
                     <div class="form-group row">
                         <input type="submit" class="btn btn-success" style="width:150px" value="submit">
                     </div>
+
+
 
                     
                 </form>
