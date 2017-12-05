@@ -1,0 +1,38 @@
+.navbar-logo {
+
+	width:30px;
+
+}
+
+.v-bar {
+
+	color:gray;
+
+}
+
+p {
+
+	text-align: justify;
+
+}
+
+footer  {
+
+	min-height: 100px;
+	vertical-align: text-bottom;
+	width:100%;
+	text-align:center;
+}
+
+a {
+
+	text-decoration: none;
+
+}
+
+hr{
+
+    padding: 10px;
+    margin: 0px;    
+
+  }
