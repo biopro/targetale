@@ -76,4 +76,6 @@ cp -r back-end/* /etc/targetale/
 systemctl daemon-reload
 service targetale start
 
+chmod 777 -R /etc/targetale/
+
 echo "[ 5 ] finalizado"

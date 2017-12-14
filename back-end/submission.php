@@ -45,7 +45,73 @@
 
                 <?php 
 
-                    echo $_POST["email"];
+                    // alert function
+
+                    function alert ($type, $messenge){
+
+                        $raw_alert = "<div class=\"alert %s\" role=\"alert\">%s</div>";
+                        return sprintf($raw_alert, $type, $messenge);
+
+                    };
+
+                    // database setup
+
+                    $mysqlHost = "localhost";
+                    $mysqlUser = "root";
+                    $mysqlPassword = "querocafe";
+
+                    // database connection
+
+                    $connection = new mysqli($mysqlHost, $mysqlUser, $mysqlPassword, 'targetale');
+
+                    if ($connection->connect_error){
+                        
+                        echo (alert("alert-danger", "Error: unable to connect to the database."));
+
+                    } else {
+
+                        // recuperar dados de entrada
+
+                        $userEmail = $_POST['email'];
+                        $userEmail = trim($userEmail);
+                        $userEmail = strtolower($userEmail);
+                        $userEmailMD5 = md5($userEmail);
+                        $userFileDir = '/etc/targetale/uploads/' . $userEmailMD5;
+
+                        $tmpFilePath = $_FILES['genome']['tmp_name'];
+                        $fileFormat = $_POST['file-format'];
+
+                        $finalFilePath = $userFileDir . '/' . md5($tmpFilePath . date() . time());
+
+                        $promoterome = $_GET['promoterome'];
+
+                        // create a dir for the user, if it doesn't exist yet
+
+                        if (!is_dir($userFileDir)){
+
+                            mkdir($userFileDir);
+
+                        };
+                        
+                        // save uploaded file to user file directory
+
+                        move_uploaded_file($tmpFilePath, $finalFilePath);
+
+                        $sql = "INSERT INTO projects (userEmail, submissionDate, status, inputFilePath, inputFileFormat, promoterome) VALUES ('$userEmail', CURDATE(), 'queued', '$finalFilePath', '$fileFormat', '$promoterome')";
+
+                        if ($connection->query($sql) === TRUE) {
+
+                            echo (alert("alert-success", "Your jobs was successfully submitted!"));
+
+                        } else {
+
+                            echo (alert("alert-danger", "Error: unable to submitting your job."));
+
+                        }
+                        
+                        $connection->close();
+
+                    }
 
                 ?>
                 
