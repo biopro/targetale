@@ -1,0 +1,79 @@
+#!/usr/bin/env bash
+
+echo '
+=======================================================================
+Targetale: A web tool to map TALE genes in the genome X. oryzae strains 
+and their potential targets in O. sativa
+-----------------------------------------------------------------------
+
+Deploy system
+
+=======================================================================
+'
+
+if [[ $(whoami) =~ "root" ]]; then
+
+	echo "[ 0 ] Você está rodando como root!"
+
+
+else
+
+	echo "[ 0 ] Erro: este script deve ser executado como root"
+	exit
+
+fi
+
+# globals
+
+
+MYSQL_USER=root
+MYSQL_PASSWORD=querocafe
+HTTP_ROOT_DIR=/var/www/html/targeTALE/
+
+
+# set-up database
+
+echo "[ 1 ] configurando banco de dados"
+cd back-end/sql/
+mysql -u$MYSQL_USER -p$MYSQL_PASSWORD -e "source scheme.sql" 2> /dev/null
+cd ../..
+
+# update files in the apache dir
+
+echo "[ 2 ] copiando arquivos para a pasta HTTP"
+cp -r front-end/* $HTTP_ROOT_DIR/
+
+for file in back-end/*.php; do
+
+	if [ -f $file ]; then
+
+		cp -r $file $HTTP_ROOT_DIR/
+
+	fi
+
+done
+
+
+# set up targetale-server service
+
+echo "[ 3 ] configurando daemon"
+chmod 777 -R back-end/
+chmod +x back-end/targetale-server.py
+chmod +x back-end/daemon/targetale
+cp back-end/daemon/targetale /etc/init.d/targetale
+
+# set-up server dir
+
+echo "[ 4 ] configurando targetale-server"
+if [ ! -d /etc/targetale/ ]; then
+
+	mkdir /etc/targetale/
+
+fi
+
+rm -r /etc/targetale/*
+cp -r back-end/* /etc/targetale/
+systemctl daemon-reload
+service targetale start
+
+echo "[ 5 ] finalizado"

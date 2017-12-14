@@ -10,11 +10,15 @@ USE targetale;
 CREATE TABLE projects (
 
     id int primary key auto_increment,
-    user text not null,
+    userEmail text not null,
     submissionDate date  not null,
+    finishedDate date  not null,
+    
     status text  not null,
-    inputFileContent BLOB not null,
+    inputFilePath text not null,
     inputFileFormat text not null,
     promoterome text not null
 
 );
+
+
