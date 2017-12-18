@@ -1,0 +1,6 @@
+Parameters of tool "TALE Class Assignment" (assign):
+c - Class builder (TALE class builder definition)	= Class_builder.xml
+t - TALE sequences (The sequences of the TALEs (DNA or protein), or "TALE DNA parts" or "TALE Protein parts" output of "TALE Analysis", or RVD sequences.)	= TALE_DNA_parts.fasta
+s - Strain (The name of the strain., OPTIONAL)	= null
+a - Accession (The accesion number of the genome (if applicable)., OPTIONAL)	= null
+outdir - The output directory, defaults to the current working directory (.)	= /home/bioinfo/Desktop/TargeTALE/targetale/back-end/test/results/fasta/annotale

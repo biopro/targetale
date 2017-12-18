@@ -1,0 +1,4 @@
+Parameters of tool "TALE Prediction" (predict):
+g - Genome (The input Xanthomonas genome in FastA or Genbank format)	= test/results/fasta/annotale/genome.fasta
+s - Strain (The name of the strain, will be used for annotated TALEs, OPTIONAL)	= null
+outdir - The output directory, defaults to the current working directory (.)	= /home/bioinfo/Desktop/TargeTALE/targetale/back-end/test/results/fasta/annotale

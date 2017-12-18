@@ -1,4 +1,6 @@
-#!/usr/bin/env bash
+#!/usr/bin/env python
+
+import wrappers 
 
 class pipeline:
     """
@@ -17,7 +19,6 @@ class pipeline:
         self.outdir = ""
         self.database = ""
         self.format = ""
-        self.JAVA_PATH = "/usr/bin/java"
 
         return None
 
@@ -39,5 +40,14 @@ class pipeline:
         """
         Executes the pipeline
         """
+
+        annotale = wrappers.annotale()
+        talgetter = wrappers.talgetter()
+        gene2uniprot = wrappers.gene2uniprot()
+        quickgo = wrappers.quickgo()
+
+        # run annotale
+
+
 
         return None

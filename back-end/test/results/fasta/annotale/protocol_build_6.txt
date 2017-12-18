@@ -1,0 +1,26 @@
+Parameters of tool "TALE Class Builder" (build):
+t - TALE sequences (The sequences of the TALEs (DNA or protein), or "TALE DNA parts" or "TALE Protein parts" output of "TALE Analysis", or RVD sequences.)	= /home/bioinfo/Desktop/TargeTALE/targetale/back-end/test/results/fasta/annotale/TALE_DNA_sequences.fasta
+c - Cutoff (Cutoff value defining the maximum distance of a TALE class, valid range = [0.0, 1.7976931348623157E308], default = 5.0)	= 5.0
+s - Significance level (Cutoff value on the p-value representing alignment significance, valid range = [0.0, 1.0], default = 0.01)	= 0.01
+outdir - The output directory, defaults to the current working directory (.)	= /home/bioinfo/Desktop/TargeTALE/targetale/back-end/test/results/fasta/annotale
+tempTALE1 [442554-446046:1]
+tempTALE2 [516799-520702:1]
+tempTALE3 [2945843-2949437:1]
+tempTALE4 [4401412-4404700:1]
+tempTALE5 [4085144-4088969:-1]
+tempTALE6 [2480621-2484926:-1]
+tempTALE7 [2477406-2480490:-1]
+tempTALE8 [2472973-2477275:-1]
+tempTALE9 [206193-209583:-1]
+Loaded TALEs from complete sequences.
+Building classes.
+Generating reports and plots for 9 classes...
+1
+2
+3
+4
+5
+6
+7
+8
+9

@@ -1,0 +1,23 @@
+Class 8 for (AffineCosts, 5.0, SEMI_GLOBAL)
+distance: 0
+significance: p=0E0
+
+ NN HD NV HD NI NG NI NN NS HD HD NI NG NI NG NI	81
+ NN HD NV HD NI NG NI NN NS HD HD NI NG NI NG NI	tempTALE4
+
+Most likely common binding sequence:
+TG  C  A  C  A  T  A  G  A  C  C  A  T  A  T  A
+
+
+Class tree:
+0.0 (
+	(81)
+
+	(tempTALE4)
+
+)
+
+
+Alignment scores:
+tempTALE4 vs. 81: 0
+

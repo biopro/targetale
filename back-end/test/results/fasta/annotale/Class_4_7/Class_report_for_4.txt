@@ -1,0 +1,29 @@
+Class 4 for (AffineCosts, 5.0, SEMI_GLOBAL)
+distance: -∞
+significance: p=0E0
+
+ NN HD NI NN HD NG HD HD NG NG NI NG NI NG	tempTALE7
+
+Most likely common binding sequence:
+TG  C  A  G  C  T  C  C  T  T  A  T  A  T
+
+
+Class tree:
+(tempTALE7)
+
+
+Alignment scores:
+
+Related classes with significant matches:
+Class 3 with members
+tempTALE8 related to tempTALE7 with score 6.8 (p=3,1E-3)
+
+Alignments:
+tempTALE8 vs. tempTALE7:
+ -- -- -- -- -- -- -- -- -- -- -- -- NN HD NI NN HD NG HD HD NG NG NI NG NI NG
+                                     |: || || || || || || || :: || |: :: :: ||
+ NN ND NN NI NK NN HD NN NG NG N* HD N* HD NI NN HD NG HD HD HD NG NN HD HD NG
+Cost: 6.8
+
+
+

@@ -1,0 +1,20 @@
+parameters:
+input	... Input sequences (The sequences to scan for TAL effector target sites, FastA)	= db/promoteromes/Prom_250_bp.txt
+uo	... Upstream offset (Number of positions ignored at 5' end of each sequence, default = 0)	= 0
+do	... Downstream offset (Number of positions ignored at 3' end of each sequence, default = 0)	= 0
+rvd	... RVD sequence (Sequence of RVDs, seperated by '-', default = NI-HD-HD-NG-NN-NK-NK)	= NN-NG-NN-HD-HD-NI-N*-NG-HD-NI-NG-NN-HD-NI-NG-NI-NG-NN-NG-HD-NI-NI-NG-HD-NN-NG
+model	... Model type (TALgetter is the default model that uses individual binding specificities for each RVD. TALgetter13 uses binding specificities that only depend on amino acid 13, i.e., the second amino acid of the repat.While TALgetter is recommended in most cases, the use of TALgetter13 may be beneficial if you search for target sites of TAL effector with many rare RVDs, for instance YG, HH, or S*., range={TALgetter, TALgetter13}, default = TALgetter)	= TALgetter
+pval	... PVals (Computation of p-Values, range={NONE, COARSE, FINE}, default = COARSE)	= COARSE
+pthresh	... p-Value (Filter the reported hits by a maximum p-Value. A value of 0 or 1 switches off the filter., valid range = [0.0, 1.0], default = 1.0)	= 0.01
+top	... Maximum number of target sites (Limits the total number of reported target sites in all input sequences, ranked by their score., valid range = [1, 10000], default = 100)	= 10000
+train	... Training data (The input data to use for training the model, annotated FastA, OPTIONAL)	= null
+strand	... Both strands (Search both strands of the input sequence for target sites, default = false)	= false
+
+_________________________________
+Searching for targets of TAL effector sequence
+	NN-NG-NN-HD-HD-NI-N*-NG-HD-NI-NG-NN-HD-NI-NG-NI-NG-NN-NG-HD-NI-NI-NG-HD-NN-NG.
+
+Reporting at most 10000 target sites in 24209 input sequences.
+
+
+Finished...

@@ -85,7 +85,7 @@ while True:
 
 	# atualizar database
 
-	databaseCursor.execute("UPDATE projects SET status='%s' WHERE id=%s"%(project_status,project_id))
+	databaseCursor.execute("UPDATE projects SET status='%s' finishedDate=CURDATE() WHERE id=%s"%(project_status,project_id))
 	databaseConnection.commit()
 
 	# limpeza do garbage collector e espera

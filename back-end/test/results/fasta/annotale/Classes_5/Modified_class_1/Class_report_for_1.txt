@@ -1,0 +1,23 @@
+Class 1 for (AffineCosts, 5.0, SEMI_GLOBAL)
+distance: 0
+significance: p=0E0
+
+ NN NN NN NI NN NN HD NI NG HD NI NN HD NG HD HD NG	11
+ NN NN NN NI NN NN HD NI NG HD NI NN HD NG HD HD NG	tempTALE9
+
+Most likely common binding sequence:
+TG  G  G  A  G  G  C  A  T  C  A  G  C  T  C  C  T
+
+
+Class tree:
+0.0 (
+	(11)
+
+	(tempTALE9)
+
+)
+
+
+Alignment scores:
+tempTALE9 vs. 11: 0
+

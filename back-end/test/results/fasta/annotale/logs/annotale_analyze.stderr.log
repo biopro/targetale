@@ -1,0 +1,4 @@
+Parameters of tool "TALE Analysis" (analyze):
+n - Name (A name for this run of TALE Analysis, OPTIONAL)	= null
+t - TALE DNA sequences (The DNA sequences of the TALEs)	= /home/bioinfo/Desktop/TargeTALE/targetale/back-end/test/results/fasta/annotale/TALE_DNA_sequences.fasta
+outdir - The output directory, defaults to the current working directory (.)	= /home/bioinfo/Desktop/TargeTALE/targetale/back-end/test/results/fasta/annotale

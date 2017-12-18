@@ -1,0 +1,23 @@
+Class 2 for (AffineCosts, 5.0, SEMI_GLOBAL)
+distance: 0
+significance: p=0E0
+
+ NN HD HD NN NN NG NG HD NG HD HD NG HD HD HD HD NG HD NG	21
+ NN HD HD NN NN NG NG HD NG HD HD NG HD HD HD HD NG HD NG	tempTALE3
+
+Most likely common binding sequence:
+TG  C  C  G  G  T  T  C  T  C  C  T  C  C  C  C  T  C  T
+
+
+Class tree:
+0.0 (
+	(21)
+
+	(tempTALE3)
+
+)
+
+
+Alignment scores:
+tempTALE3 vs. 21: 0
+

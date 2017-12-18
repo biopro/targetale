@@ -1,0 +1,23 @@
+Class 6 for (AffineCosts, 5.0, SEMI_GLOBAL)
+distance: 0
+significance: p=0E0
+
+ NI HD NN NS NN NG HD NG HD NG NN NG HD NS HD NI NG HD HD NN HD NN	61
+ NI HD NN NS NN NG HD NG HD NG NN NG HD NS HD NI NG HD HD NN HD NN	tempTALE2
+
+Most likely common binding sequence:
+TA  C  G  A  G  T  C  T  C  T  G  T  C  A  C  A  T  C  C  G  C  G
+
+
+Class tree:
+0.0 (
+	(61)
+
+	(tempTALE2)
+
+)
+
+
+Alignment scores:
+tempTALE2 vs. 61: 0
+

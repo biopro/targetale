@@ -1,0 +1,25 @@
+The 9 TALEs have been assigned to the following classes:
+- tempTALE9 has been assigned to existing class  with name 11
+- tempTALE3 has been assigned to existing class  with name 21
+- tempTALE8 has been assigned to existing class  with name 31
+- tempTALE7 has been assigned to existing class  with name 41
+- tempTALE1 has been assigned to existing class  with name 51
+- tempTALE2 has been assigned to existing class  with name 61
+- tempTALE6 has been assigned to existing class  with name 71
+- tempTALE4 has been assigned to existing class  with name 81
+- tempTALE5 has been assigned to existing class  with name 91
+
+
+A detailed assignment report for each individual TALE can be found under "Reports".
+
+Class reports and class trees for all classes that have been created or 
+modified due to class assignment of these TALEs are available under "Classes".
+
+The systematic names proposed for these TALEs based on the class assignment are 
+available as "TALE names".
+This file can also be used for the "Rename TALEs in File" module of AnnoTALE.
+
+A class builder that may be used in successive runs of the "TALE Class Assignment" 
+module is provided as "Augmented class builder".
+
+Renamed TALE DNA and protein sequences are provided under "Renamed TALE protein sequences".
