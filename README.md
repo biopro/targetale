@@ -1,5 +1,5 @@
 
-# TargeTALE: A web tool to map TALE genes in the genome X. oryzae strains and their potential targets in *O. sativa*
+# TargeTALE: A web tool to map TALE genes in the genome *X. oryzae* strains and their potential targets in *O. sativa*
 
 
 ## The pipeline
